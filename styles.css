@@ -5,6 +5,7 @@
     --primary-color: #6415ff;
     --secondary-color: #3c0399;
     --text-color: #243E63;
+    --text-color-light: #A0AEC0;
 }
 
 * {
@@ -15,7 +16,6 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    padding: 2rem;
 }
 
 ul {
@@ -50,6 +50,15 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    text-align: center;
+    color: var(--text-color);
+
+}
+
 h4 {
     text-transform: uppercase;
     font-size: 1rem;
@@ -60,14 +69,41 @@ span {
     color: var(--primary-color);
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: #fff;
+input {
+    width: 80%;
+    padding: 1.25rem 1rem;
+    border: 2px solid #eaeaea;
+    border-radius: 3rem;
+    border: 2px solid #E2E8F0;
+    transition: all 0.3s ease;
+}
+input::placeholder {
+    color: var(--text-color-light);
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+input:hover {
+    border: 2px solid #cbd5e0;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+
+.small {
+    font-size: 0.75rem;
+    color: var(--text-color-light);
+    text-transform: uppercase;
+    margin-top: 5rem;
+    lwetter-spacing: 0.5em;
+    font-weight: 700;
 }
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -91,6 +127,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 0 0 0;
 }
 
 .logo__container {
@@ -103,10 +140,21 @@ footer {
     height: 40px;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .logo__text {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: 0.025em;
     margin-left: 8px;
+    color: var(--text-color);
+}
+
+.logo__text:hover {
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 .nav__items {
@@ -114,12 +162,12 @@ footer {
     align-items: center;
 }
 
-.nav__item {
+.nav__item  {
     margin: 0 1.5rem;
 }
 
 .extra__space {
-    margin: 0 1.5rem 0 3rem;
+    margin-left: 3rem;
 }
 
 .two__col--container {
@@ -150,6 +198,61 @@ footer {
 .hero__para {
     font-size: 1.125rem;
     margin: 2rem 0;
+}
+
+.input__container {
+    position: relative;
+}
+
+.input__btn {
+    position: absolute;
+    content: '';
+    right: 104px;
+    margin: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.customers__logo-strip {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    opacity: 0.5;
+    padding-right: 128px;
+}
+
+.features {
+    padding-top: 6rem;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.features__para {
+    font-size: 1.125rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;   
+    margin-top: 1rem;
+    color: var(--text-color);
+    line-height: 1.625;
+
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
 }
 
 .footer__container {

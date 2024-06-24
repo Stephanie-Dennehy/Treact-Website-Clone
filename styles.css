@@ -56,7 +56,14 @@ h2 {
     letter-spacing: 0.025em;
     text-align: center;
     color: var(--text-color);
+}
 
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    letter-spacing: 0.025em;
 }
 
 h4 {
@@ -239,11 +246,115 @@ input:focus {
     font-size: 1.125rem;
     margin: 0 auto;
     width: 100%;
-    max-width: 600px;   
+    max-width: 36rem;   
     margin-top: 1rem;
     color: var(--text-color);
     line-height: 1.625;
+}
 
+.features__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 6rem 6rem;;
+}
+
+.feature__container {
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 0.5rem;
+    width: calc(100% / 3);
+    align-items: flex-start;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__container {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E2E8F0;
+    margin-right: 1rem;
+}
+
+.feature__text--descprition {
+    width: 100%;
+    max-width: 14rem;
+    line-height: 2;
+    color: #7C8BA1;
+    font-weight: 500;
+}
+
+.left__col--even {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right__col--even {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+
+.title__left {
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+    width: 100%;
+    max-width: 36rem;
+}
+
+.quality__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quality__para {
+    font-size: 1.125rem;
+    width: 100%;
+    max-width: 38rem;   
+    margin-top: 1rem;
+    color: var(--text-color);
+    line-height: 1.625;
+}
+
+.quality__btn {
+    width: 100%;
+    max-width: 9rem;
+    margin-top: 2rem;
+    font-size: .875rem;
+    font-weight: 700;
+    padding: .75rem 2rem;
+}
+
+.container__padding {
+    padding: 3rem 0;
+}
+
+.step__container {
+    display: flex;
+}
+
+.step__directions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
 }
 
 footer {
